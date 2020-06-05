@@ -10,6 +10,6 @@ interface InterfaceCurrency {
     suspend fun getCurrency() : Response<CurrencyData>
 
 
-    @GET("/albums")
+    @GET("/latest")
     suspend fun getSortedCurrency(@Query("base") baseId: String): Response<CurrencyData>
 }
